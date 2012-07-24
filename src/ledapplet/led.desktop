@@ -1,0 +1,21 @@
+
+[Desktop Entry]
+Type=ControlPanelApplet
+Name=qtn_led_applet_title
+
+Icon=
+Exec=
+X-logical-id=qtn_led_applet_title
+X-translation-catalog=ledapplet
+X-Maemo-Service=com.nokia.DuiControlPanel
+X-Maemo-Method=com.nokia.DuiControlPanelIf.appletPage
+X-Maemo-Object-Path=/
+X-Maemo-Fixed-Args=qtn_led_applet_title
+
+[DUI]
+X-DUIApplet-Applet=libledapplet.so
+
+[DCP]
+Category=qtn_noti_settings_title
+Order=6
+WidgetType=Label

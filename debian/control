@@ -1,0 +1,38 @@
+Source: meegotouchcp-ledapplet
+Section: devel
+Priority: optional
+Maintainer: Tomasz Pieniążek <t.pieniazek@gazeta.pl>
+Build-Depends: debhelper (>= 5), libduicontrolpanel-dev (>= 0.9.0),
+               libmeegotouch-dev (>= 0.20.40), devicelock-dev, 
+               clean-device-dev (>= 0.0.3)
+Standards-Version: 3.8.0
+
+Package: duicontrolpanel-ledapplet-l10n-engineering-english
+Section: devel
+Architecture: all
+Description: Engineering English translations for ledapplet package
+
+Package: duicontrolpanel-ledapplet-l10n-polish
+Section: devel
+Architecture: all
+Description: Polish translations for ledapplet package
+
+Package: duicontrolpanel-ledapplet-l10n-english
+Section: devel
+Architecture: all
+Description: English translations for ledapplet package
+
+Package: duicontrolpanel-ledapplet
+Section: misc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, duicontrolpanel, clean-device,
+         duicontrolpanel-ledapplet-l10n-engineering-english
+Description: LED notifications settings applet.
+
+Package: duicontrolpanel-ledapplet-dbg
+Section: debug
+Architecture: any
+Priority: extra
+Depends: duicontrolpanel-ledapplet (=${binary:Version})
+Description: LED notifications Settings Applet - debugging symbols
+

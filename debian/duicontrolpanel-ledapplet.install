@@ -1,0 +1,4 @@
+usr/lib/duicontrolpanel/led.desktop
+usr/lib/duicontrolpanel/applets/libledapplet.so
+opt/ledapplet/styles/ledapplet.css
+opt/ledapplet/styles/led.png
