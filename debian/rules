@@ -82,6 +82,9 @@ binary-indep: build install
 	# install the translation source file to doc.
 	install -m 644 -D -p $(CURDIR)/translations/ledapplet.ts \
 		$(CURDIR)/debian/tmp/usr/share/doc/ledapplet-l10n-engineering-english/ledapplet.ts
+	# install the eng translation to main package.
+	install -m 644 -D -p $(CURDIR)/translations/ledapplet_en.qm \
+		$(CURDIR)/debian/tmp/usr/share/l10n/meegotouch/ledapplet.qm
 
 # Build architecture-dependent files here.
 binary-arch: build install

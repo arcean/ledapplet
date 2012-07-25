@@ -4,7 +4,7 @@ contains(BUILD_FEATURES,coverage) {
 	coverage.commands = $$system(true)
 }
 
-LANGUAGES = en pl
+LANGUAGES = en pl zh_CN
 CATALOGNAME = ledapplet
 SOURCEDIR = $$PWD/../src/ledapplet
 

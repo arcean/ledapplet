@@ -1,3 +1,10 @@
+meegotouchcp-ledapplet (0.0.2-1) meegotouch; urgency=low
+
+  * Locale fixes.
+  * New translation: Chinese Simplified.
+
+ -- Tomasz Pieniążek <t.pieniazek@gazeta.pl>  Sat, 25 Jul 2012 16:55:44 +0200
+
 meegotouchcp-ledapplet (0.0.1-1) meegotouch; urgency=low
 
   * Initial release.

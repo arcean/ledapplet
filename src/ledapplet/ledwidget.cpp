@@ -34,7 +34,7 @@ LedWidget::LedWidget (
     DcpWidget (parent),
     m_LedBusinessLogic (LedBusinessLogic)
 {
-    MLocale locale("en");
+    MLocale locale;
     locale.installTrCatalog("ledapplet");
     MLocale::setDefault(locale);
 
