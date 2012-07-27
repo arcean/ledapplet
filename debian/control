@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 5), libduicontrolpanel-dev (>= 0.9.0),
 Standards-Version: 3.8.0
 
 Package: duicontrolpanel-ledapplet-l10n-additional
-Section: devel
+Section: l10n
 Architecture: all
 Replaces: duicontrolpanel-ledapplet-l10n-english, duicontrolpanel-ledapplet-l10n-polish
 Description: Additional translations for ledapplet package
@@ -16,7 +16,7 @@ Package: duicontrolpanel-ledapplet
 Section: misc
 Architecture: any
 Replaces: duicontrolpanel-ledapplet-l10n-engineering-english
-Depends: ${shlibs:Depends}, ${misc:Depends}, duicontrolpanel
+Depends: ${shlibs:Depends}, ${misc:Depends}, duicontrolpanel, duicontrolpanel-ledapplet-l10n-additional, system-ui-led-support
 Description: LED notifications settings applet.
 
 Package: duicontrolpanel-ledapplet-dbg

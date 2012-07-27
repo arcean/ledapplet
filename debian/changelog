@@ -1,3 +1,10 @@
+meegotouchcp-ledapplet (0.0.2-2) unstable; urgency=low
+
+  * Changed distribution to unstable.
+  * Depend on system-ui-led-support and languages.
+
+ -- Mohammad Abu-Garbeyyeh <mohammad7410@gmail.com>  Fri, 27 Jul 2012 17:34:35 +0300
+
 meegotouchcp-ledapplet (0.0.2-1) meegotouch; urgency=low
 
   * Locale fixes.
