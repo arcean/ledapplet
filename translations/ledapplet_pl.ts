@@ -58,6 +58,11 @@
         <source></source>
         <translation>Twitter</translation>
     </message>
+    <message id="qtn_led_applet_wazapp">
+        <location filename="../src/ledapplet/ledsettingswidget.cpp" line="99"/>
+        <source></source>
+        <translation>Wazapp</translation>
+    </message>
     <message id="qtn_led_applet_organiser">
         <location filename="../src/ledapplet/ledsettingswidget.cpp" line="99"/>
         <source></source>

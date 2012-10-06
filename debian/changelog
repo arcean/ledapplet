@@ -1,3 +1,9 @@
+meegotouchcp-ledapplet (0.0.3-1) meegotouch; urgency=low
+
+  * New: Wazapp support.
+
+ -- Tomasz Pieniążek <t.pieniazek@gazeta.pl>  Sat, 06 Oct 2012 18:03:06 +0200
+
 meegotouchcp-ledapplet (0.0.2-2) unstable; urgency=low
 
   * Changed distribution to unstable.

@@ -44,6 +44,7 @@ private slots:
     void storeFacebook(bool isToggled);
     void storeTwitter(bool isToggled);
     void storeOrganiser(bool isToggled);
+    void storeWazapp(bool isToggled);
 
 private:
     void onLoad();
@@ -56,6 +57,7 @@ private:
     Switch                  *facebook;
     Switch                  *twitter;
     Switch                  *organiser;
+    Switch                  *wazapp;
 
     QPointer<LedBusinessLogic>    m_LedBusinessLogic;
 };

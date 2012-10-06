@@ -53,6 +53,11 @@
         <source></source>
         <translation>脸书事件</translation>
     </message>
+    <message id="qtn_led_applet_wazapp">
+        <location filename="../src/ledapplet/ledsettingswidget.cpp" line="99"/>
+        <source></source>
+        <translation>Wazapp</translation>
+    </message>
     <message id="qtn_led_applet_twitter">
         <location filename="../src/ledapplet/ledsettingswidget.cpp" line="97"/>
         <source></source>

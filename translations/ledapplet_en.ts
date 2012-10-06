@@ -63,6 +63,11 @@
         <source></source>
         <translation>Missed organiser events</translation>
     </message>
+    <message id="qtn_led_applet_wazapp">
+        <location filename="../src/ledapplet/ledsettingswidget.cpp" line="99"/>
+        <source></source>
+        <translation>Wazapp events</translation>
+    </message>
     <message id="qtn_led_applet_title">
         <location filename="../src/ledapplet/ledwidget.cpp" line="73"/>
         <source></source>

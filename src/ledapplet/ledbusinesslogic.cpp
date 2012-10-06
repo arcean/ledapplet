@@ -41,7 +41,8 @@ bool LedBusinessLogic::isLEDEnabled()
             || configItem->value().toStringList().contains("email")
             || configItem->value().toStringList().contains("facebook")
             || configItem->value().toStringList().contains("twitter")
-            || configItem->value().toStringList().contains("organiser");
+            || configItem->value().toStringList().contains("organiser")
+            || configItem->value().toStringList().contains("wazapp");
 
     if (isEnabled)
         return true;
@@ -53,7 +54,7 @@ void LedBusinessLogic::setEnabledLED(bool enable)
     QStringList list;
 
     if (enable) {
-        list << "call" << "chat" << "sms" << "voicemail" << "email" << "facebook" << "twitter" << "organiser";
+        list << "call" << "chat" << "sms" << "voicemail" << "email" << "facebook" << "twitter" << "organiser" << "wazapp";
         configItem->set(QVariant(list));
     }
     else {

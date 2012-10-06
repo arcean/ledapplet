@@ -89,12 +89,14 @@ LedSettingsWidget::createContent ()
     configBoxLayout->addItem(voicemail);
     email = new Switch(qtTrId("qtn_led_applet_email"));
     configBoxLayout->addItem(email);
+    organiser = new Switch(qtTrId("qtn_led_applet_organiser"));
+    configBoxLayout->addItem(organiser);
     facebook = new Switch(qtTrId("qtn_led_applet_facebook"));
     configBoxLayout->addItem(facebook);
     twitter = new Switch(qtTrId("qtn_led_applet_twitter"));
     configBoxLayout->addItem(twitter);
-    organiser = new Switch(qtTrId("qtn_led_applet_organiser"));
-    configBoxLayout->addItem(organiser);
+    wazapp = new Switch(qtTrId("qtn_led_applet_wazapp"));
+    configBoxLayout->addItem(wazapp);
 
     mainLayoutPolicy->addItem(configBox);
 
@@ -109,6 +111,7 @@ LedSettingsWidget::createContent ()
     connect(facebook, SIGNAL(switchToggled(bool)), this, SLOT(storeFacebook(bool)));
     connect(twitter, SIGNAL(switchToggled(bool)), this, SLOT(storeTwitter(bool)));
     connect(organiser, SIGNAL(switchToggled(bool)), this, SLOT(storeOrganiser(bool)));
+    connect(wazapp, SIGNAL(switchToggled(bool)), this, SLOT(storeWazapp(bool)));
 
     onLoad();
 }
@@ -153,6 +156,11 @@ void LedSettingsWidget::storeOrganiser(bool isToggled)
     m_LedBusinessLogic.data()->setEnabled("organiser", isToggled);
 }
 
+void LedSettingsWidget::storeWazapp(bool isToggled)
+{
+    m_LedBusinessLogic.data()->setEnabled("wazapp", isToggled);
+}
+
 void LedSettingsWidget::onLoad()
 {
     call->setChecked(m_LedBusinessLogic.data()->isEnabled("call"));
@@ -163,5 +171,6 @@ void LedSettingsWidget::onLoad()
     facebook->setChecked(m_LedBusinessLogic.data()->isEnabled("facebook"));
     twitter->setChecked(m_LedBusinessLogic.data()->isEnabled("twitter"));
     organiser->setChecked(m_LedBusinessLogic.data()->isEnabled("organiser"));
+    wazapp->setChecked(m_LedBusinessLogic.data()->isEnabled("wazapp"));
 }
 
